@@ -15,8 +15,9 @@ function Dashboard() {
   'Authorization': `Bearer ${token}`,
   'Content-Type': 'application/json'
    };
-  useEffect(() => {
+ useEffect(() => {
     fetchInvestments();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchInvestments = async () => {
